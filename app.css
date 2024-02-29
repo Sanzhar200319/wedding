@@ -1,0 +1,151 @@
+html {
+    scroll-behavior: smooth !important;
+    scrollbar-width: none !important;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif !important;
+    padding: 0 !important;
+    background-color: #ffffff; /* Light Gray */
+}
+
+.font-esthetic {
+    font-family: 'Sacramento', cursive !important;
+    color: #91d14c !important;
+}
+
+.font-arabic {
+    font-family: 'Noto Naskh Arabic', serif !important;
+    color: #a4e65d !important;
+}
+
+#home {
+    position: relative;
+    height: 100vh;
+    background-image: url('C:/Users/Admin/OneDrive/Рабочий стол/wedding/assets/images/weq.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+ 
+.img-crop {
+    width: 14rem;
+    height: 14rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.img-crop > img {
+    display: inline;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+}
+
+.btn-music {
+    position: fixed;
+    bottom: 9vh !important;
+    right: 2vh !important;
+    z-index: 1055 !important;
+}
+
+.loading-page {
+    position: fixed;
+    inset: 0 !important;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 1056 !important;
+}
+
+.card-body {
+    overflow-wrap: break-word !important;
+    background-color: #ffffff; /* White */
+    border: 1px solid #a4e65d; /* Light Gray Border */
+}
+
+.mouse-animation {
+    padding: 0.25rem 0.625rem;
+    height: 2rem;
+    border: 0.1rem solid #a4e65d;
+    border-radius: 1.4rem;
+    opacity: 0.75;
+    box-sizing: content-box;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+}
+
+.mouse-animation > .scroll-animation {
+    width: 0.25rem;
+    height: 0.625rem;
+    border-radius: 25%;
+    background-color: #a4e65d;
+    animation-name: scroll;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.btn {
+    background-color: #ffcc99; /* Peach */
+    color: #a4e65d; /* White Text */
+    border-color: #ffcc99; /* Peach Border */
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Smooth Transition */
+}
+
+.btn:hover {
+    background-color: #ffa64d; /* Light Orange on Hover */
+    border-color: #ffa64d; /* Light Orange Border on Hover */
+    color: #a4e65d; /* White Text on Hover */
+}
+
+@keyframes spin-icon {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spin-button {
+    animation: spin-icon 5s linear infinite;
+}
+
+@keyframes love {
+    50% {
+        transform: translateY(1rem);
+    }
+}
+
+.animate-love {
+    animation: love 5s ease-in-out infinite;
+}
+
+.dark-section {
+    background-color: #111111 !important;
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
+}
+
+footer {
+    background-color: #111111 !important;
+    margin-top: -0.5rem;
+    padding-bottom: 5rem;
+}
